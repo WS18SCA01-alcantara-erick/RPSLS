@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RPSLS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="64597b0c55dfaaf-2" translatesAutoresizingMaskIntoConstraints="NO" id="orr-3g-mDW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3eN-y4-Wlp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Nxo-AY-LqJ">
+                                        <rect key="frame" x="40" y="0.0" width="334" height="862"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="🤖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Oa-SV-Eb9">
+                                                <rect key="frame" x="134.5" y="0.0" width="65" height="156.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock, Paper, Scissor, Lizard, Spock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sim-fM-gf9">
+                                                <rect key="frame" x="50" y="176.5" width="234" height="156.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="HQO-zD-MHl">
+                                                <rect key="frame" x="0.0" y="353" width="334" height="156"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Koh-99-6z0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="54" height="156"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                        <state key="normal" title="👊🏽"/>
+                                                        <connections>
+                                                            <action selector="rockPicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kno-hH-92D"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJV-pT-Zat">
+                                                        <rect key="frame" x="70" y="0.0" width="54" height="156"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                        <state key="normal" title="✋🏽"/>
+                                                        <connections>
+                                                            <action selector="paperPicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Fc-cf-RnN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ou-2A-3lx">
+                                                        <rect key="frame" x="140" y="0.0" width="54" height="156"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                        <state key="normal" title="✌🏽"/>
+                                                        <connections>
+                                                            <action selector="scissorsPicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uYN-26-XKp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4h-Op-N88">
+                                                        <rect key="frame" x="210" y="0.0" width="54" height="156"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                        <state key="normal" title="🦎"/>
+                                                        <connections>
+                                                            <action selector="lizardPicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Vf-sH-9EH"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i4D-sa-UYg">
+                                                        <rect key="frame" x="280" y="0.0" width="54" height="156"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                        <state key="normal" title="🖖🏽"/>
+                                                        <connections>
+                                                            <action selector="spockPicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hB0-w8-Gge"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk2-tj-aN7">
+                                                <rect key="frame" x="138.5" y="529" width="57" height="156.5"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                                <state key="normal" title="Battle"/>
+                                                <connections>
+                                                    <action selector="startBattle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zNe-bM-F4y"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="150" translatesAutoresizingMaskIntoConstraints="NO" id="cpH-CX-H45">
+                                                <rect key="frame" x="40.5" y="705.5" width="253.5" height="156.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ofc-tM-isb">
+                                                        <rect key="frame" x="0.0" y="0.0" width="68" height="156.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HUMAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pyq-4G-NAK">
+                                                                <rect key="frame" x="0.0" y="0.0" width="68" height="68.5"/>
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyP-VH-lyL">
+                                                                <rect key="frame" x="29" y="88.5" width="10" height="68"/>
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Y8Q-FE-dEB">
+                                                        <rect key="frame" x="218" y="0.0" width="35.5" height="156.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sq2-FD-hcN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="35.5" height="68.5"/>
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNC-g6-OBs">
+                                                                <rect key="frame" x="12.5" y="88.5" width="10" height="68"/>
+                                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="orr-3g-mDW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3eP-xl-kzY"/>
+                            <constraint firstItem="3eN-y4-Wlp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="B5Y-NW-qRX"/>
+                            <constraint firstItem="orr-3g-mDW" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Gmd-CC-4KL"/>
+                            <constraint firstItem="3eN-y4-Wlp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KZd-8G-FrK"/>
+                            <constraint firstItem="orr-3g-mDW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LrG-6z-scR"/>
+                            <constraint firstItem="3eN-y4-Wlp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="S4Z-86-1kt"/>
+                            <constraint firstItem="orr-3g-mDW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cod-O9-4M6"/>
+                            <constraint firstItem="3eN-y4-Wlp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="oQu-m3-yBp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="battleButton" destination="hk2-tj-aN7" id="Hvx-lI-PcC"/>
+                        <outlet property="computerLabel" destination="9Oa-SV-Eb9" id="ZqJ-hp-80e"/>
+                        <outlet property="cpuScoreLabel" destination="HNC-g6-OBs" id="tVa-pz-4cN"/>
+                        <outlet property="gameStatus" destination="sim-fM-gf9" id="5nT-LM-eK1"/>
+                        <outlet property="humanScoreLabel" destination="lyP-VH-lyL" id="R8h-PE-cZr"/>
+                        <outlet property="lizardButton" destination="s4h-Op-N88" id="lA2-eC-H0M"/>
+                        <outlet property="paperButton" destination="jJV-pT-Zat" id="1yT-pw-v7P"/>
+                        <outlet property="rockButton" destination="Koh-99-6z0" id="sZa-Tr-0ps"/>
+                        <outlet property="scissorsButton" destination="7ou-2A-3lx" id="qN5-TA-f1x"/>
+                        <outlet property="spockButton" destination="i4D-sa-UYg" id="g2d-Ex-MCL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="133.25892857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="64597b0c55dfaaf-2" width="142" height="65"/>
+    </resources>
+</document>
